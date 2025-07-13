@@ -47,16 +47,30 @@
   </div>
 
   <main id="employeeList">
-    <#list employees as emp>
-      <div class="employee-card">
-        <h3>${emp.firstName} ${emp.lastName}</h3>
-        <p>Email: ${emp.email}</p>
-        <p>Department: ${emp.department}</p>
-        <p>Role: ${emp.role}</p>
-        <button onclick="location.href='form.html?id=${emp.id}'">Edit</button>
-        <button onclick="remove('${emp.id}')">Delete</button>
+          <div class="employee-card">
+        <h3>Jyoti Swain</h3>
+        <p>Email: jyoti@example.com</p>
+        <p>Department: Engineering</p>
+        <p>Role: Frontend Developer</p>
+        <button onclick="location.href='form.html?id=610769b4-04fa-4add-a7f2-9e8e601869a8'">Edit</button>
+        <button onclick="remove('610769b4-04fa-4add-a7f2-9e8e601869a8')">Delete</button>
       </div>
-    </#list>
+      <div class="employee-card">
+        <h3>Rahul Verma</h3>
+        <p>Email: rahul@example.com</p>
+        <p>Department: Sales</p>
+        <p>Role: Manager</p>
+        <button onclick="location.href='form.html?id=fa095506-b20a-4dd8-91ba-39ca67fac052'">Edit</button>
+        <button onclick="remove('fa095506-b20a-4dd8-91ba-39ca67fac052')">Delete</button>
+      </div>
+      <div class="employee-card">
+        <h3>Anita Patel</h3>
+        <p>Email: anita@example.com</p>
+        <p>Department: HR</p>
+        <p>Role: Recruiter</p>
+        <button onclick="location.href='form.html?id=42971f25-2d07-4cba-b125-0effaa366a91'">Edit</button>
+        <button onclick="remove('42971f25-2d07-4cba-b125-0effaa366a91')">Delete</button>
+      </div>
   </main>
 
   <footer>
